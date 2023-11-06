@@ -1,0 +1,66 @@
+{
+    "name": "Swet Shreet",
+    "about": "I'm Swet Shreet, a Computer Science graduate from the National Institute of Technology, Hamirpur. I have a strong passion for coding and creating digital experiences. With a background in web and game development, as well as experience as a Software Engineer Intern at Amazon, UK, I'm eager to tackle challenging projects and continue learning.",
+    "contacts": {
+        "phone": { "name": "Moblie", "data": "+91-7992307048" },
+        "email": { "name": "E-Mail", "data": "shreet.swet@gmail.com" },
+        "github": { "name": "Github", "data": "https://github.com/swet-s" },
+        "codeforces": {
+            "name": "Codeforces",
+            "data": "https://codeforces.com/profile/_swet"
+        },
+        "codechef": {
+            "name": "CodeChef",
+            "data": "https://www.codechef.com/users/sswet"
+        },
+        "linkedin": {
+            "name": "LinkedIn",
+            "data": "https://www.linkedin.com/in/swetshreet"
+        },
+        "twitter": {
+            "name": "Twitter",
+            "data": "https://twitter.com/ShreetSwet"
+        }
+    },
+    "infoList": [
+        { "name": "Name", "data": "Swet Shreet" },
+        { "name": "Phone No", "data": "+91-7992307048" },
+        { "name": "Email Id", "data": "shreet.swet@gmail.com" },
+        { "name": "Address", "data": "Guru Nagar Gangta, Godda, Jharkhand, India, 814133" },
+        { "name": "LinkedIn", "data": "https://www.linkedin.com/in/swetshreet" },
+        { "name": "Github", "data": "https://github.com/swet-s" },
+        { "name": "Codeforces", "data": "https://codeforces.com/profile/_swet" },
+        { "name": "CodeChef", "data": "https://www.codechef.com/users/sswet" }
+    ],
+    "projects": [
+        {
+            "name": "Intractle",
+            "description": "Wordle-like web game built with React and Express.",
+            "status": "Ongoing",
+            "techStack": ["React", "Express", "MongoDB"]
+        },
+        {
+            "name": "My Notes",
+            "description": "Full-stack web app for storing texts and links.",
+            "status": "Completed",
+            "techStack": ["NodeJs", "React", "MongoDB"]
+        },
+        {
+            "name": "Dark",
+            "description": "Interactive Android game developed using Unity and C#.",
+            "status": "Completed",
+            "techStack": ["Unity", "C#"]
+        }
+    ],
+    "skills": {
+        "programmingLanguages": ["C++", "C#", "JavaScript", "TypeScript", "Java", "Python"],
+        "librariesFrameworks": ["NodeJs", "ExpressJs", "ReactJs"],
+        "databases": ["Amazon DynamoDB", "MongoDB"],
+        "toolsPlatforms": ["Git", "AWS", "Unity", "Photoshop"],
+        "knowledgeAreas": [
+            "Data Structures & Algorithms",
+            "Object-Oriented Programming",
+            "Machine Learning"
+        ]
+    }
+}

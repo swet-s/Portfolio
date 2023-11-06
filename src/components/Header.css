@@ -1,0 +1,102 @@
+/* Grayscale background color */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(112, 83, 83, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sidebar button for mobile */
+.sidebar-button {
+    display: none; /* Initially hidden on larger screens */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: monospace;
+    cursor: pointer;
+    padding: 4px;
+}
+
+/* Responsive navigation bar for mobile devices */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-name {
+    margin-right: auto;
+    margin-left: 12px;
+    font-size: 32px;
+    font-family: cursive;
+    font-variant: small-caps;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Define styles for active links */
+.selected {
+    font-weight: bolder;
+}
+
+.content-separator {
+    display: none;
+}
+
+/* Collapsible sidebar for mobile devices */
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    .row-1 {
+        display: flex;
+    }
+
+    .sidebar-button {
+        display: block; /* Show the sidebar button on smaller screens */
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .nav-name {
+        /* display: none; */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+        display: none; /* Initially hide the navigation list */
+    }
+
+    .content-separator {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .nav-list.active {
+        display: flex; /* Show the navigation list when the sidebar button is clicked */
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(112, 83, 83, 0.1);
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links p {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.phone {
+    margin-left: 10px;
+}

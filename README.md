@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Swet Shreet's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio! This repository showcases my work, projects, and skills in the field of computer science and software development.
 
-## Available Scripts
+## About Me
 
-In the project directory, you can run:
+I'm Swet Shreet, a Computer Science graduate from the National Institute of Technology, Hamirpur. I have a strong passion for coding and creating digital experiences. With a background in web and game development, as well as experience as a Software Engineer Intern at Amazon UK, I'm eager to tackle challenging projects and continue learning.
 
-### `npm start`
+## Projects
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Here are some of the key projects I've worked on:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   **Intractle (Web Development)**
 
-### `npm test`
+    -   A wordle variant web application built using React.
+    -   Designed with a responsive UI using Tailwind CSS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **My Notes (Web Development)**
 
-### `npm run build`
+    -   A full-stack web app developed with Node.js, React, and MongoDB.
+    -   Serves as a keeper app for storing texts and links.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   **Dark (Game Development)**
+    -   An interactive Android game designed and developed using Unity and C#.
+    -   Features engaging levels with interactive UI elements.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Achievements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   ICPC rankings: 30th in Kanpur-Mathura Regional 2020, 85th in Gwalior-Pune Regional 2020.
+-   Codeforces: Expert coder (rating: 1800+).
+-   Codechef: 6-star coder (rating: 2200+).
+-   Achieved global ranks in coding competitions.
 
-### `npm run eject`
+## Technical Skills
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   Programming languages: C++, C#, JavaScript, TypeScript, Python, Java.
+-   Libraries and Frameworks: Node.js, Express.js, Mongoose, React.js.
+-   Databases: Amazon DynamoDB, MongoDB.
+-   Tools/Platforms: Git, AWS, Unity, Photoshop.
+-   Familiar with data structures and algorithms, object-oriented programming, and machine learning.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Connect with Me
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Feel free to connect with me on LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/swetshreet)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for visiting my portfolio!
