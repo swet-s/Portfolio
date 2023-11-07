@@ -5,9 +5,40 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background: linear-gradient(to right, #fee, #ace); /* Gradient background color */
+    background: linear-gradient(to right, #d9caca, #859fb9); /* Gradient background color */
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Playpen Sans", "Arial Narrow", Arial, sans-serif;
+}
+
+h3 {
+    font-family: "Playpen Sans", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+    padding: 4rem 12rem;
+}
+
+.card {
+    background-color: #f7f7f753;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Collapsible sidebar for mobile devices */
+@media (max-width: 768px) {
+    h2 {
+        text-align: left;
+    }
+
+    .container {
+        padding: 2rem 2rem;
+    }
 }

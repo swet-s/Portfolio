@@ -14,7 +14,7 @@ const Header = ({ text }) => {
         <header className="header">
             <nav>
                 <div className="row-1">
-                    <li className="nav-name">{text}</li>
+                    <span className="nav-name">{text}</span>
                     <button className="sidebar-button" onClick={() => toggleNavBar()}>
                         ☰
                     </button>
@@ -33,6 +33,15 @@ const Header = ({ text }) => {
                             className={location.pathname === "/projects" ? "selected" : ""}
                         >
                             Projects
+                        </Link>
+                    </li>
+                    <hr className="content-separator" />
+                    <li className="nav-item">
+                        <Link
+                            to="/info"
+                            className={location.pathname === "/info" ? "selected" : ""}
+                        >
+                            Info
                         </Link>
                     </li>
                 </ul>

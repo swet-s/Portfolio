@@ -27,6 +27,7 @@
         { "name": "Phone No", "data": "+91-7992307048" },
         { "name": "Email Id", "data": "shreet.swet@gmail.com" },
         { "name": "Address", "data": "Guru Nagar Gangta, Godda, Jharkhand, India, 814133" },
+        { "name": "Resume", "data": "https://bit.ly/3sz81yO" },
         { "name": "LinkedIn", "data": "https://www.linkedin.com/in/swetshreet" },
         { "name": "Github", "data": "https://github.com/swet-s" },
         { "name": "Codeforces", "data": "https://codeforces.com/profile/_swet" },
@@ -37,19 +38,23 @@
             "name": "Intractle",
             "description": "Wordle-like web game built with React and Express.",
             "status": "Ongoing",
-            "techStack": ["React", "Express", "MongoDB"]
+            "techStack": ["React", "Express", "MongoDB"],
+            "link": "https://github.com/swet-s/Intractle",
+            "demo": "https://intractle.onrender.com/game/word"
         },
         {
             "name": "My Notes",
             "description": "Full-stack web app for storing texts and links.",
             "status": "Completed",
-            "techStack": ["NodeJs", "React", "MongoDB"]
+            "techStack": ["NodeJs", "React", "MongoDB"],
+            "link": ""
         },
         {
             "name": "Dark",
             "description": "Interactive Android game developed using Unity and C#.",
             "status": "Completed",
-            "techStack": ["Unity", "C#"]
+            "techStack": ["Unity", "C#"],
+            "link": ""
         }
     ],
     "skills": {

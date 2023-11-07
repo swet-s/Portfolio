@@ -1,0 +1,82 @@
+.info {
+    display: flex;
+    overflow: hidden;
+}
+
+.list-name {
+    background-color: #222; /* Background color for the data bar */
+    color: #eee;
+    border-radius: 5px 1px 1px 5px;
+    text-align: center;
+
+    padding: 30px 10px;
+    margin: 6px 2.8px 6px 6px;
+
+    flex: 1;
+}
+
+.list-data {
+    background-color: #787878; /* Background color for the data bar */
+    color: #eee;
+    border-radius: 1px 5px 5px 1px;
+
+    margin: 6px 6px 6px 2.8px;
+
+    overflow: hidden; /* Prevents the data-text from overflowing the boxes */
+    white-space: nowrap; /* Prevent text from wrapping */
+
+    flex: 4;
+    display: flex;
+    justify-content: end;
+}
+
+.data-text {
+    margin-left: 10px;
+    padding: 30px 10px;
+
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto; /* Adds a horizontal scrollbar when the text overflows */
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+    font-weight: 100;
+}
+
+.copy-button {
+    background-color: #858585d1; /* Button background color */
+    color: #f1efdf; /* Button text color */
+    box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    border-radius: 1px;
+    padding: 3px 4px;
+
+    margin-top: -1px;
+    margin-bottom: auto;
+    margin-right: -2px;
+}
+
+.copy-button:hover {
+    background-color: #333; /* Button background color on hover */
+}
+
+/* Collapsible sidebar for mobile devices */
+@media (max-width: 768px) {
+    .list-name {
+        font-size: xx-small;
+        padding: 12px;
+        border-radius: 4px 1px 1px 4px;
+        margin: 3px 1.4px 3px 3px;
+    }
+
+    .list-data {
+        font-size: xx-small;
+        border-radius: 1px 4px 4px 1px;
+
+        margin: 3px 3px 3px 1.4px;
+    }
+
+    .data-text {
+        padding: 12px;
+    }
+}
