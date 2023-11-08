@@ -1,17 +1,17 @@
 import React from "react";
 import myData from "../res/my-data.json";
-import "./Project.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import "./Work.css";
 
-const Projects = () => {
+const Project = () => {
     const projects = myData.projects;
 
     const handleCopy = (project) => {
-        let text = `Project Name: ${project.name}\nDescription: ${project.description}\nStatus: ${
-            project.status
+        let text = `Project Name: ${project.name}\nDescription: ${project.description}\nDuration: ${
+            project.duration
         }\nTechStack: ${project.techStack.join(", ")}`;
 
         navigator.clipboard
@@ -21,18 +21,18 @@ const Projects = () => {
     };
 
     return (
-        <div className="container">
+        <>
             <h2>My Projects</h2>
             {projects.map((project, index) => (
                 <div key={index} className="project card">
                     <div className="top-bar">
                         {project.link && (
-                            <a href={project.link} target="_blank" className="project-link">
+                            <a href={project.link} className="project-link">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                         )}
                         {project.demo && (
-                            <a href={project.demo} target="_blank" className="project-demo">
+                            <a href={project.demo} className="project-demo">
                                 <FontAwesomeIcon icon={faLink} />
                             </a>
                         )}
@@ -41,17 +41,17 @@ const Projects = () => {
                         </span>
                     </div>
                     <div className="card-header">
-                        <h3 className="project-name">{project.name}</h3>
-                        <code className="project-status">{project.status}</code>
+                        <h3 className="card-name">{project.name}</h3>
+                        <code className="card-status">{project.duration}</code>
                     </div>
-                    <p className="project-description">{project.description}</p>
+                    <p className="card-description">{project.description}</p>
 
                     {project.techStack && (
                         <div className="tech-stack">
                             <code className="tech-name">TechStack</code>
                             <div className="tech-list">
                                 {project.techStack.map((tech, index) => (
-                                    <code key={index} className="tech">
+                                    <code key={index}>
                                         {tech}
                                         {index !== project.techStack.length - 1 ? "," : ""}
                                     </code>
@@ -61,8 +61,8 @@ const Projects = () => {
                     )}
                 </div>
             ))}
-        </div>
+        </>
     );
 };
 
-export default Projects;
+export default Project;

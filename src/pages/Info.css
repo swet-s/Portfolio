@@ -4,9 +4,15 @@
 }
 
 .list-name {
-    background-color: #222; /* Background color for the data bar */
+    background-color: #2222228a; /* Background color for the data bar */
     color: #eee;
     border-radius: 5px 1px 1px 5px;
+
+    border-top: 1.5px solid #555;
+    border-left: 1.5px solid #555;
+    border-right: 1.5px solid #aaa;
+    border-bottom: 1.5px solid #aaa;
+
     text-align: center;
 
     padding: 30px 10px;
@@ -16,9 +22,14 @@
 }
 
 .list-data {
-    background-color: #787878; /* Background color for the data bar */
+    background-color: #655c5c6e; /* Background color for the data bar */
     color: #eee;
     border-radius: 1px 5px 5px 1px;
+
+    border-top: 1.5px solid #555;
+    border-left: 1.5px solid #555;
+    border-right: 1.5px solid #aaa;
+    border-bottom: 1.5px solid #aaa;
 
     margin: 6px 6px 6px 2.8px;
 
@@ -27,7 +38,7 @@
 
     flex: 4;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .data-text {
@@ -63,14 +74,14 @@
 /* Collapsible sidebar for mobile devices */
 @media (max-width: 768px) {
     .list-name {
-        font-size: xx-small;
+        font-size: x-small;
         padding: 12px;
         border-radius: 4px 1px 1px 4px;
         margin: 3px 1.4px 3px 3px;
     }
 
     .list-data {
-        font-size: xx-small;
+        font-size: x-small;
         border-radius: 1px 4px 4px 1px;
 
         margin: 3px 3px 3px 1.4px;

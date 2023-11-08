@@ -1,4 +1,3 @@
-/* Grayscale background color */
 .header {
     background-color: #333;
     color: #fff;
@@ -18,9 +17,7 @@ nav {
     border: none;
     color: #fff;
     font-size: 24px;
-    font-family: Anton;
     cursor: pointer;
-    padding: 4px;
 }
 
 /* Responsive navigation bar for mobile devices */
@@ -38,7 +35,7 @@ nav {
     margin-right: auto;
     margin-left: 12px;
     font-size: 32px;
-    font-family: monospace;
+    font-family: "Courier New", Courier, monospace;
     font-variant: small-caps;
 }
 
@@ -47,13 +44,14 @@ nav {
 }
 
 .nav-item a {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Define styles for active links */
 .selected {
-    font-weight: bolder;
+    color: #fff !important;
 }
 
 .content-separator {

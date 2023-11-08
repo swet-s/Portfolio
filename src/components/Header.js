@@ -29,10 +29,10 @@ const Header = ({ text }) => {
                     <hr className="content-separator" />
                     <li className="nav-item">
                         <Link
-                            to="/projects"
-                            className={location.pathname === "/projects" ? "selected" : ""}
+                            to="/work"
+                            className={location.pathname === "/work" ? "selected" : ""}
                         >
-                            Projects
+                            Work
                         </Link>
                     </li>
                     <hr className="content-separator" />

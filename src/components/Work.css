@@ -1,0 +1,140 @@
+.project,
+.work {
+    padding: 32px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+    margin-right: -28px;
+}
+
+.project-link,
+.project-demo,
+.project-copy,
+.work-copy {
+    background-color: #858585d1;
+    color: #f1efdf;
+    box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 2.8px 5px; /* Common padding for buttons */
+}
+
+.project-link:hover,
+.project-demo:hover,
+.project-copy:hover,
+.work-copy:hover {
+    background-color: #33333388;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header-2 {
+    display: flex;
+    padding: 0 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-name {
+    margin: 5px 0;
+}
+
+.card-status {
+    font-size: small;
+    color: #444;
+}
+
+.card-description {
+    border-radius: 3px;
+    padding: 10px;
+    text-wrap: wrap;
+    font-size: medium;
+}
+
+.tech-stack {
+    display: flex;
+    overflow: hidden;
+}
+
+.tech-name {
+    color: #000;
+    border-radius: 3px;
+    margin-right: 2px;
+    padding: 10px;
+    flex: 1;
+    font-size: small;
+    font-weight: bolder;
+    text-align: center;
+    color: #333;
+}
+
+.tech-list {
+    display: flex;
+    color: #000;
+    border-radius: 3px;
+    margin-left: 2px;
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+    overflow-x: auto;
+    white-space: nowrap;
+    align-items: center;
+    flex: 4;
+    color: #333;
+}
+
+/* Common background styling for descriptions and tech info */
+.card-description,
+.tech-name,
+.tech-list {
+    background-color: #ffffff51;
+}
+
+/* Collapsible sidebar for mobile devices */
+@media (max-width: 768px) {
+    .project,
+    .work {
+        padding: 16px;
+    }
+    .card-name {
+        font-size: small;
+    }
+
+    .card-status {
+        font-size: xx-small;
+    }
+
+    .card-description {
+        font-size: small;
+    }
+
+    .tech-name {
+        font-size: x-small;
+    }
+
+    .tech-list {
+        font-size: x-small;
+    }
+
+    .top-bar {
+        margin-top: -10px;
+        margin-right: -14px;
+    }
+
+    .project-link,
+    .project-demo,
+    .project-copy,
+    .work-copy {
+        border-radius: 3px;
+        margin-right: 4px;
+        font-size: x-small;
+        padding: 2px 3px; /* Common padding for buttons */
+    }
+}

@@ -37,7 +37,7 @@
         {
             "name": "Intractle",
             "description": "Wordle-like web game built with React and Express.",
-            "status": "Ongoing",
+            "duration": "Apr 2023 - Present",
             "techStack": ["React", "Express", "MongoDB"],
             "link": "https://github.com/swet-s/Intractle",
             "demo": "https://intractle.onrender.com/game/word"
@@ -45,16 +45,29 @@
         {
             "name": "My Notes",
             "description": "Full-stack web app for storing texts and links.",
-            "status": "Completed",
+            "duration": "Jan 2022 - Aug 2022",
             "techStack": ["NodeJs", "React", "MongoDB"],
             "link": ""
         },
         {
             "name": "Dark",
             "description": "Interactive Android game developed using Unity and C#.",
-            "status": "Completed",
+            "duration": "Jul 2020 - Dec 2020",
             "techStack": ["Unity", "C#"],
             "link": ""
+        }
+    ],
+    "workExp": [
+        {
+            "company": "Amazon UK",
+            "position": "Software Engineer Intern",
+            "location": "London, England, UK",
+            "duration": "Jan 2023 - Mar 2023",
+            "description": [
+                "Developed a new feature 'TicketBot' for Prime Video Insights Team.",
+                "Collaborated on AWS Lambda integration and code quality maintenance."
+            ],
+            "techStack": ["Java", "TypeScript", "AWS Lambda", "DynamoDB", "CloudWatch"]
         }
     ],
     "skills": {
