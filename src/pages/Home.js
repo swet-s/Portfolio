@@ -1,12 +1,20 @@
 import React from "react";
-import myData from "../res/my-data.json";
-import "./Home.css";
+import { Link } from "react-router-dom";
+import Education from "../components/Education";
+import Skill from "../components/Skill";
+import About from "../components/About";
+import CoinToss from "../components/CoinToss";
 
 const Home = () => {
     return (
         <div className="container">
-            <h2>About Me</h2>
-            <p className="description card">{myData.about}</p>
+            <About />
+            <div style={{ height: "15px" }}></div>
+            <Skill />
+            <div style={{ height: "15px" }}></div>
+            <Education />
+            <div style={{ height: "15px" }}></div>
+            <CoinToss />
         </div>
     );
 };

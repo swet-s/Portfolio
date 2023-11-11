@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMarsAndVenus, faNavicon } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ text }) => {
     const location = useLocation(); // Get the current location
@@ -15,9 +17,11 @@ const Header = ({ text }) => {
             <nav>
                 <div className="row-1">
                     <span className="nav-name">{text}</span>
-                    <button className="sidebar-button" onClick={() => toggleNavBar()}>
-                        ☰
-                    </button>
+                    <FontAwesomeIcon
+                        className="sidebar-button"
+                        onClick={() => toggleNavBar()}
+                        icon={faNavicon}
+                    ></FontAwesomeIcon>
                 </div>
                 <ul className={`nav-list ${isSidebarOpen ? "active" : ""}`}>
                     <hr className="content-separator" />

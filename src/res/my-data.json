@@ -59,26 +59,37 @@
     ],
     "workExp": [
         {
-            "company": "Amazon UK",
+            "company": "Amazon",
             "position": "Software Engineer Intern",
-            "location": "London, England, UK",
             "duration": "Jan 2023 - Mar 2023",
-            "description": [
-                "Developed a new feature 'TicketBot' for Prime Video Insights Team.",
-                "Collaborated on AWS Lambda integration and code quality maintenance."
-            ],
+            "location": "London, England, UK",
+            "description": "Developed a new feature 'TicketBot' for Prime Video Insights Team.Collaborated on AWS Lambda integration and code quality maintenance.",
             "techStack": ["Java", "TypeScript", "AWS Lambda", "DynamoDB", "CloudWatch"]
         }
     ],
-    "skills": {
-        "programmingLanguages": ["C++", "C#", "JavaScript", "TypeScript", "Java", "Python"],
-        "librariesFrameworks": ["NodeJs", "ExpressJs", "ReactJs"],
-        "databases": ["Amazon DynamoDB", "MongoDB"],
-        "toolsPlatforms": ["Git", "AWS", "Unity", "Photoshop"],
-        "knowledgeAreas": [
-            "Data Structures & Algorithms",
-            "Object-Oriented Programming",
-            "Machine Learning"
-        ]
-    }
+    "education": [
+        {
+            "institution": "National Institute of Technology, Hamirpur",
+            "degree": "Bachelor of Technology, Computer Science",
+            "duration": "July 2019 - Oct 2023",
+            "cgpa": "8.36/10.0"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming Languages",
+            "data": ["C++", "C#", "JavaScript", "TypeScript", "Java", "Python"]
+        },
+        { "name": "Libraries Frameworks", "data": ["NodeJs", "ExpressJs", "ReactJs"] },
+        { "name": "Databases", "data": ["Amazon DynamoDB", "MongoDB"] },
+        { "name": "Tools Platforms", "data": ["Git", "AWS", "Unity", "Photoshop"] },
+        {
+            "name": "Knowledge Areas",
+            "data": [
+                "Data Structures & Algorithms",
+                "Object-Oriented Programming",
+                "Machine Learning"
+            ]
+        }
+    ]
 }

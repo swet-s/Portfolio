@@ -1,93 +1,89 @@
 .info {
     display: flex;
     overflow: hidden;
+    padding: 20px;
+}
+
+.list-name,
+.list-data {
+    background-color: #ffffff50;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .list-name {
-    background-color: #2222228a; /* Background color for the data bar */
-    color: #eee;
+    color: #222;
     border-radius: 5px 1px 1px 5px;
 
-    border-top: 1.5px solid #555;
-    border-left: 1.5px solid #555;
-    border-right: 1.5px solid #aaa;
-    border-bottom: 1.5px solid #aaa;
+    margin-right: 6px;
+    padding: 10px;
 
-    text-align: center;
-
-    padding: 30px 10px;
-    margin: 6px 2.8px 6px 6px;
+    display: flex;
+    align-items: center;
 
     flex: 1;
 }
 
 .list-data {
-    background-color: #655c5c6e; /* Background color for the data bar */
-    color: #eee;
+    color: #555;
     border-radius: 1px 5px 5px 1px;
-
-    border-top: 1.5px solid #555;
-    border-left: 1.5px solid #555;
-    border-right: 1.5px solid #aaa;
-    border-bottom: 1.5px solid #aaa;
-
-    margin: 6px 6px 6px 2.8px;
 
     overflow: hidden; /* Prevents the data-text from overflowing the boxes */
     white-space: nowrap; /* Prevent text from wrapping */
 
+    padding-left: 10px;
+    padding-right: 10px;
+
     flex: 4;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .data-text {
-    margin-left: 10px;
-    padding: 30px 10px;
-
-    display: flex;
-    align-items: center;
-
     overflow-x: auto; /* Adds a horizontal scrollbar when the text overflows */
-    white-space: nowrap; /* Prevents the text from wrapping to the next line */
-    font-weight: 100;
 }
 
 .copy-button {
-    background-color: #858585d1; /* Button background color */
+    background-color: #8585859c; /* Button background color */
     color: #f1efdf; /* Button text color */
     box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    border-radius: 1px;
+    border-radius: 3px;
     padding: 3px 4px;
-
-    margin-top: -1px;
-    margin-bottom: auto;
-    margin-right: -2px;
+    margin: 0 0 auto 5px;
 }
 
 .copy-button:hover {
-    background-color: #333; /* Button background color on hover */
+    background-color: #33333388; /* Button background color on hover */
 }
 
 /* Collapsible sidebar for mobile devices */
 @media (max-width: 768px) {
+    .info {
+        padding: 10px;
+    }
+
+    .list-name,
+    .list-data {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     .list-name {
-        font-size: x-small;
-        padding: 12px;
+        font-size: xx-small;
         border-radius: 4px 1px 1px 4px;
-        margin: 3px 1.4px 3px 3px;
+        margin-right: 4px;
     }
 
     .list-data {
-        font-size: x-small;
+        font-size: xx-small;
         border-radius: 1px 4px 4px 1px;
 
-        margin: 3px 3px 3px 1.4px;
-    }
-
-    .data-text {
-        padding: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }

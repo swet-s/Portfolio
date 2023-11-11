@@ -2,7 +2,7 @@ import React from "react";
 import myData from "../res/my-data.json";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Work.css";
+import "./Card.css";
 
 const WorkExperience = () => {
     const workExp = myData.workExp;

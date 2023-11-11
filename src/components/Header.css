@@ -1,13 +1,20 @@
 .header {
-    background-color: #333;
+    background-color: #00000099;
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 12px;
-    box-shadow: 0 2px 4px rgba(112, 83, 83, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+.nav-name {
+    font-size: 32px;
+    font-family: "Courier New", Courier, monospace;
+    font-variant: small-caps;
+    text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Sidebar button for mobile */
@@ -16,8 +23,9 @@ nav {
     background: none;
     border: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 /* Responsive navigation bar for mobile devices */
@@ -31,22 +39,15 @@ nav {
     flex-wrap: wrap;
 }
 
-.nav-name {
-    margin-right: auto;
-    margin-left: 12px;
-    font-size: 32px;
-    font-family: "Courier New", Courier, monospace;
-    font-variant: small-caps;
-}
-
 .nav-item {
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
 .nav-item a {
     color: #ccc;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Define styles for active links */
@@ -66,12 +67,12 @@ nav {
 
     .row-1 {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .sidebar-button {
         display: block; /* Show the sidebar button on smaller screens */
-        margin-left: auto;
-        margin-right: 10px;
     }
 
     .nav-list {

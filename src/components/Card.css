@@ -1,5 +1,8 @@
 .project,
-.work {
+.work,
+.education,
+.skill,
+.coin-toss {
     padding: 32px;
 }
 
@@ -14,7 +17,7 @@
 .project-demo,
 .project-copy,
 .work-copy {
-    background-color: #858585d1;
+    background-color: #8585859c;
     color: #f1efdf;
     box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -52,6 +55,7 @@
 }
 
 .card-description {
+    color: #222;
     border-radius: 3px;
     padding: 10px;
     text-wrap: wrap;
@@ -60,41 +64,46 @@
 
 .tech-stack {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .tech-name {
-    color: #000;
+    color: #222;
     border-radius: 3px;
     margin-right: 2px;
     padding: 10px;
     flex: 1;
     font-size: small;
-    font-weight: bolder;
-    text-align: center;
-    color: #333;
+
+    display: flex;
+    align-items: center;
 }
 
 .tech-list {
-    display: flex;
-    color: #000;
+    color: #555;
     border-radius: 3px;
     margin-left: 2px;
     padding: 10px;
+    display: flex;
     text-align: center;
     font-size: small;
     overflow-x: auto;
     white-space: nowrap;
+
     align-items: center;
     flex: 4;
-    color: #333;
+}
+
+.skills {
+    margin: 6px 0;
 }
 
 /* Common background styling for descriptions and tech info */
 .card-description,
 .tech-name,
 .tech-list {
-    background-color: #ffffff51;
+    background-color: #ffffff50;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Collapsible sidebar for mobile devices */
