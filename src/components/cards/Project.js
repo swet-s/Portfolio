@@ -1,10 +1,11 @@
 import React from "react";
-import myData from "../res/my-data.json";
+import myData from "../../res/my-data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import "./Card.css";
+import "../Card.css";
+import ItemBox from "../boxes/ItemBox";
 
 const Project = () => {
     const projects = myData.projects;
@@ -24,7 +25,7 @@ const Project = () => {
         <>
             <h2>My Projects</h2>
             {projects.map((project, index) => (
-                <div key={index} className="project card">
+                <div key={index} className="card card-large">
                     <div className="top-bar">
                         {project.link && (
                             <a href={project.link} className="project-link">
@@ -46,19 +47,7 @@ const Project = () => {
                     </div>
                     <p className="card-description">{project.description}</p>
 
-                    {project.techStack && (
-                        <div className="tech-stack">
-                            <code className="tech-name">TechStack</code>
-                            <div className="tech-list">
-                                {project.techStack.map((tech, index) => (
-                                    <code key={index}>
-                                        {tech}
-                                        {index !== project.techStack.length - 1 ? "," : ""}
-                                    </code>
-                                ))}
-                            </div>
-                        </div>
-                    )}
+                    <ItemBox name="TeckStack" data={project.techStack} copy={false}></ItemBox>
                 </div>
             ))}
         </>

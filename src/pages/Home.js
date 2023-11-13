@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Education from "../components/Education";
-import Skill from "../components/Skill";
-import About from "../components/About";
-import CoinToss from "../components/CoinToss";
+import Education from "../components/cards/Education";
+import Skill from "../components/cards/Skill";
+import About from "../components/cards/About";
 
 const Home = () => {
     return (
@@ -13,8 +12,6 @@ const Home = () => {
             <Skill />
             <div style={{ height: "15px" }}></div>
             <Education />
-            <div style={{ height: "15px" }}></div>
-            <CoinToss />
         </div>
     );
 };

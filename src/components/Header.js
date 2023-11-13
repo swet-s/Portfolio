@@ -27,7 +27,7 @@ const Header = ({ text }) => {
                     <hr className="content-separator" />
                     <li className="nav-item">
                         <Link to="/" className={location.pathname === "/" ? "selected" : ""}>
-                            Home
+                            home
                         </Link>
                     </li>
                     <hr className="content-separator" />
@@ -36,7 +36,7 @@ const Header = ({ text }) => {
                             to="/work"
                             className={location.pathname === "/work" ? "selected" : ""}
                         >
-                            Work
+                            work
                         </Link>
                     </li>
                     <hr className="content-separator" />
@@ -45,7 +45,16 @@ const Header = ({ text }) => {
                             to="/info"
                             className={location.pathname === "/info" ? "selected" : ""}
                         >
-                            Info
+                            info
+                        </Link>
+                    </li>
+                    <hr className="content-separator" />
+                    <li className="nav-item">
+                        <Link
+                            to="/games"
+                            className={location.pathname === "/games" ? "selected" : ""}
+                        >
+                            games
                         </Link>
                     </li>
                 </ul>

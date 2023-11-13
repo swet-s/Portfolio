@@ -1,5 +1,6 @@
 {
     "name": "Swet Shreet",
+    "intro": "I am a passionate Software Engineer with experience in various technologies. My skills include Java, TypeScript, React, and more.",
     "about": "I'm Swet Shreet, a Computer Science graduate from the National Institute of Technology, Hamirpur. I have a strong passion for coding and creating digital experiences. With a background in web and game development, as well as experience as a Software Engineer Intern at Amazon, UK, I'm eager to tackle challenging projects and continue learning.",
     "contacts": {
         "phone": { "name": "Moblie", "data": "+91-7992307048" },
@@ -77,10 +78,19 @@
     ],
     "skills": [
         {
-            "name": "Programming Languages",
-            "data": ["C++", "C#", "JavaScript", "TypeScript", "Java", "Python"]
+            "name": "Programming",
+            "data": [
+                "C++",
+                "C#",
+                "JavaScript",
+                "TypeScript",
+                "Java",
+                "Python",
+                "NodeJs",
+                "ExpressJs",
+                "ReactJs"
+            ]
         },
-        { "name": "Libraries Frameworks", "data": ["NodeJs", "ExpressJs", "ReactJs"] },
         { "name": "Databases", "data": ["Amazon DynamoDB", "MongoDB"] },
         { "name": "Tools Platforms", "data": ["Git", "AWS", "Unity", "Photoshop"] },
         {

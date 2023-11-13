@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CoinToss.css"; // Import your CSS file for styling
-import "./Card.css"; // Import your CSS file for styling
+import "../Card.css"; // Import your CSS file for styling
 
 const CoinToss = () => {
     const [isFlipping, setIsFlipping] = useState(false);
@@ -24,15 +24,27 @@ const CoinToss = () => {
 
     return (
         <>
-            <h2>Toss a Coin</h2>
-            <div className="coin-toss card">
+            <h2>Flip a Coin</h2>
+            <div className="coin-toss card card-large">
                 <div className="card-header">
-                    <h3 className="card-name">Toss a Coin</h3>
-                    <code className="card-status">Total Flips: {totalFlip}</code>
+                    <code className="card-status">Heads</code>
+                    <code className="card-status">Tails</code>
                 </div>
                 <div className="card-header-2">
-                    <code className="card-status">Heads: {headFlip}</code>
-                    <code className="card-status">Tails: {tailFlip}</code>
+                    <h3 className="card-name">{headFlip}</h3>
+                    <h3 className="card-name">{tailFlip}</h3>
+                </div>
+                <div className="card-header-2">
+                    <code className="card-status">
+                        {totalFlip !== 0
+                            ? `${((headFlip / totalFlip) * 100).toFixed(2)}%`
+                            : "50.00%"}
+                    </code>
+                    <code className="card-status">
+                        {totalFlip !== 0
+                            ? `${((tailFlip / totalFlip) * 100).toFixed(2)}%`
+                            : "50.00%"}
+                    </code>
                 </div>
                 <div className="coin-toss-container">
                     {isFlipping ? (

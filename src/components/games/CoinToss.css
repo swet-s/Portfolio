@@ -22,9 +22,10 @@
     justify-content: center;
 
     font-family: "Codystar";
+    text-shadow: -0.5px 0.5px 1px #000000;
     font-size: 0.8rem;
     font-weight: bold;
-    color: #453a00;
+    color: #a88c00;
 
     position: absolute;
     backface-visibility: hidden;

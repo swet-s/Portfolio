@@ -1,8 +1,9 @@
 import React from "react";
-import myData from "../res/my-data.json";
+import myData from "../../res/my-data.json";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Card.css";
+import "../Card.css";
+import ItemBox from "../boxes/ItemBox";
 
 const WorkExperience = () => {
     const workExp = myData.workExp;
@@ -24,7 +25,7 @@ const WorkExperience = () => {
         <>
             <h2>Work Experience</h2>
             {workExp.map((work, index) => (
-                <div key={index} className="work card">
+                <div key={index} className="card card-large">
                     <div className="top-bar">
                         <span className="work-copy" onClick={() => handleCopy(work)}>
                             <FontAwesomeIcon icon={faCopy} />
@@ -39,20 +40,7 @@ const WorkExperience = () => {
                         <code className="card-status">{work.location}</code>
                     </div>
                     <p className="card-description">{work.description}</p>
-
-                    {work.techStack && (
-                        <div className="tech-stack">
-                            <code className="tech-name">TechStack</code>
-                            <div className="tech-list">
-                                {work.techStack.map((tech, index) => (
-                                    <code key={index}>
-                                        {tech}
-                                        {index !== work.techStack.length - 1 ? "," : ""}
-                                    </code>
-                                ))}
-                            </div>
-                        </div>
-                    )}
+                    <ItemBox name="TeckStack" data={work.techStack} copy={false}></ItemBox>
                 </div>
             ))}
         </>

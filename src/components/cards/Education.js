@@ -1,8 +1,8 @@
 import React from "react";
-import myData from "../res/my-data.json";
+import myData from "../../res/my-data.json";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Card.css";
+import "../Card.css";
 
 const Education = () => {
     const education = myData.education;
@@ -20,7 +20,7 @@ const Education = () => {
         <>
             <h2>Education</h2>
             {education.map((education, index) => (
-                <div key={index} className="education card">
+                <div key={index} className="card card-large">
                     <div className="top-bar">
                         <span className="work-copy" onClick={() => handleCopy(education)}>
                             <FontAwesomeIcon icon={faCopy} />
@@ -28,8 +28,12 @@ const Education = () => {
                     </div>
                     <div className="card-header">
                         <h3 className="card-name">{education.institution}</h3>
+                    </div>
+
+                    <div className="card-header-2">
                         <code className="card-status">{education.duration}</code>
                     </div>
+
                     <div className="card-header-2">
                         <code className="card-status">{education.degree}</code>
                         <code className="card-status">{education.cgpa}</code>
