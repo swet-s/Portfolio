@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMarsAndVenus, faNavicon } from "@fortawesome/free-solid-svg-icons";
+import { faNavicon } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ text }) => {
     const location = useLocation(); // Get the current location
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleNavBar = () => {
         setIsSidebarOpen((prevState) => !prevState);
@@ -27,7 +27,7 @@ const Header = ({ text }) => {
                     <hr className="content-separator" />
                     <li className="nav-item">
                         <Link to="/" className={location.pathname === "/" ? "selected" : ""}>
-                            home
+                            Home
                         </Link>
                     </li>
                     <hr className="content-separator" />
@@ -36,7 +36,7 @@ const Header = ({ text }) => {
                             to="/work"
                             className={location.pathname === "/work" ? "selected" : ""}
                         >
-                            work
+                            Work
                         </Link>
                     </li>
                     <hr className="content-separator" />
@@ -45,16 +45,7 @@ const Header = ({ text }) => {
                             to="/info"
                             className={location.pathname === "/info" ? "selected" : ""}
                         >
-                            info
-                        </Link>
-                    </li>
-                    <hr className="content-separator" />
-                    <li className="nav-item">
-                        <Link
-                            to="/games"
-                            className={location.pathname === "/games" ? "selected" : ""}
-                        >
-                            games
+                            Info
                         </Link>
                     </li>
                 </ul>

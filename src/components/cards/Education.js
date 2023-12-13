@@ -20,7 +20,7 @@ const Education = () => {
         <>
             <h2>Education</h2>
             {education.map((education, index) => (
-                <div key={index} className="card card-large">
+                <div key={index} className="card card-large visible">
                     <div className="top-bar">
                         <span className="work-copy" onClick={() => handleCopy(education)}>
                             <FontAwesomeIcon icon={faCopy} />

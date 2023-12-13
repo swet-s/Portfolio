@@ -17,7 +17,7 @@ const Skill = () => {
     return (
         <>
             <h2>My Skills</h2>
-            <div className="card card-large">
+            <div className="card card-large visible">
                 {skills.map(
                     (skill, index) =>
                         skill.name && (

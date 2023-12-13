@@ -1,0 +1,57 @@
+.section {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.intro {
+    font-weight: bold;
+    color: aliceblue;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.introHeader {
+    font-size: 1.8rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.introSubHeader {
+    font-size: 1.4rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* For tablet devices */
+@media (max-width: 900px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .intro {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .intro {
+        margin-bottom: 1.5rem;
+        height: 130px;
+        width: 70%;
+    }
+
+    .introHeader {
+        font-size: 1.4rem;
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    .introSubHeader {
+        font-size: 1.1rem;
+        font-family: "Courier New", Courier, monospace;
+    }
+}

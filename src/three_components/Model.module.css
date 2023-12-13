@@ -1,0 +1,24 @@
+.canvas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px !important;
+    /* background-color: brown; */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .model {
+        /* height: 300px !important; */
+    }
+
+    .introHeader {
+        font-size: 1.4rem;
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    .introSubHeader {
+        font-size: 1.1rem;
+        font-family: "Courier New", Courier, monospace;
+    }
+}

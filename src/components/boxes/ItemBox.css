@@ -14,18 +14,18 @@
 }
 
 .item-name {
-    color: #222;
+    color: #111;
     border-radius: 5px 1px 1px 5px;
     margin-right: 6px;
 
     display: flex;
     align-items: center;
 
-    flex: 1;
+    flex: 2;
 }
 
 .item-data {
-    color: #555;
+    color: #333;
     border-radius: 1px 5px 5px 1px;
 
     overflow: hidden; /* Prevents the data-text from overflowing the boxes */
@@ -35,7 +35,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    flex: 4;
+    flex: 5;
 }
 
 .item-text {

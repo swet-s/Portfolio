@@ -9,7 +9,6 @@
 .project-demo,
 .project-copy,
 .work-copy {
-    background-color: #8585859c;
     color: #f1efdf;
     box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -18,8 +17,25 @@
     padding: 2.8px 5px; /* Common padding for buttons */
 }
 
-.project-link:hover,
-.project-demo:hover,
+.project-copy,
+.work-copy {
+    background-color: #858585cc;
+}
+.project-demo {
+    background-color: #ffffffcc;
+    color: #000;
+}
+.project-link {
+    background-color: #000000cc;
+}
+
+.project-demo:hover {
+    background-color: #ffffff66;
+}
+.project-link:hover {
+    background-color: #00000099;
+}
+
 .project-copy:hover,
 .work-copy:hover {
     background-color: #33333388;
@@ -44,11 +60,11 @@
 
 .card-status {
     font-size: small;
-    color: #444;
+    color: #222;
 }
 
 .card-description {
-    color: #222;
+    color: #111;
     border-radius: 3px;
     padding: 10px;
     text-wrap: wrap;
@@ -91,4 +107,68 @@
         font-size: x-small;
         padding: 2px 3px; /* Common padding for buttons */
     }
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-3%);
+    }
+}
+
+/* Define alternate animation */
+@keyframes fadeInAlt {
+    0% {
+        opacity: 0;
+        transform: translateX(3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutAlt {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(3%);
+    }
+}
+
+.card.visible {
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.card.not-visible {
+    opacity: 0;
+    animation: fadeOutAlt 0.3s ease-in-out;
+}
+
+/* Apply alternate animation to every second card */
+.visible.card:nth-child(even) {
+    animation: fadeInAlt 0.3s ease-in-out;
+}
+
+.not-visible.card:nth-child(even) {
+    animation: fadeOut 0.3s ease-in-out;
 }

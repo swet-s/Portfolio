@@ -25,7 +25,7 @@ const Project = () => {
         <>
             <h2>My Projects</h2>
             {projects.map((project, index) => (
-                <div key={index} className="card card-large">
+                <div key={index} className="card card-large visible">
                     <div className="top-bar">
                         {project.link && (
                             <a href={project.link} className="project-link">

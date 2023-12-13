@@ -25,7 +25,7 @@ const WorkExperience = () => {
         <>
             <h2>Work Experience</h2>
             {workExp.map((work, index) => (
-                <div key={index} className="card card-large">
+                <div key={index} className="card card-large visible">
                     <div className="top-bar">
                         <span className="work-copy" onClick={() => handleCopy(work)}>
                             <FontAwesomeIcon icon={faCopy} />

@@ -1,8 +1,11 @@
 .header {
-    background-color: #00000099;
-    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #000000aa;
+    backdrop-filter: blur(10px);
     color: #fff;
     padding: 12px;
+
+    /* position: fixed;
+    width: 100%; */
 }
 
 nav {
@@ -14,7 +17,8 @@ nav {
     font-size: 32px;
     font-family: "Courier New", Courier, monospace;
     font-variant: small-caps;
-    text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.5);
+
+    -webkit-text-stroke: 0.3px white;
 }
 
 /* Sidebar button for mobile */

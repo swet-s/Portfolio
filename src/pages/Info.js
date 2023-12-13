@@ -7,8 +7,8 @@ function Info() {
         <div className="container">
             <h2>My Info</h2>
             {myData.infoList.map((item, index) => (
-                <div className="card card-small">
-                    <ItemBox key={index} name={item.name} data={item.data} copy={true}></ItemBox>
+                <div key={index} className="card card-small visible">
+                    <ItemBox name={item.name} data={item.data} copy={true}></ItemBox>
                 </div>
             ))}
         </div>

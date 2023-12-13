@@ -14,17 +14,15 @@ const About = () => {
 
     return (
         <>
-            <div className="card card-large">
+            <h2>About Me</h2>
+            <div className="card card-large visible">
                 <div className="top-bar">
                     <span className="work-copy" onClick={handleCopy}>
                         <FontAwesomeIcon icon={faCopy} />
                     </span>
                 </div>
-                <div className="card-header">
-                    <h3 className="card-name">About Me</h3>
-                </div>
-                <p className="card-description">{myData.about}</p>
-                <p className="card-description">{myData.intro}</p>
+                <p className="card-description">{myData.about[0]}</p>
+                <p className="card-description">{myData.about[1]}</p>
             </div>
         </>
     );
