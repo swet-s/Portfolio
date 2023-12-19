@@ -15,7 +15,7 @@ const About = () => {
     return (
         <>
             <h2>About Me</h2>
-            <div className="card card-large visible">
+            <div className="card card-large">
                 <div className="top-bar">
                     <span className="work-copy" onClick={handleCopy}>
                         <FontAwesomeIcon icon={faCopy} />

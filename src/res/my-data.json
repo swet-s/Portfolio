@@ -76,7 +76,7 @@
             "position": "Software Development Engineer Intern",
             "duration": "Jan 2023 - Mar 2023",
             "location": "London, England, UK",
-            "description": "During the internship at Amazon, the focus was on significant contributions to the Prime Video Insights Team. A notable achievement was the development of the TicketBot feature. The project utilized a diverse tech stack, including Java, TypeScript, AWS Lambda, DynamoDB, and CloudWatch. This experience offered valuable insights into large-scale software development within a dynamic and fast-paced environment, enhancing technical skills along the way.",
+            "description": "At Amazon, during the internship, I contributed to the Prime Video Insights Team by creating a new feature called TicketBot. This feature automated the process of generating links for Insights queries, making it easier for onboarded teams to run queries and handle issues faster when a ticket was cut. I used technologies like Java, TypeScript, AWS Lambda, DynamoDB, and CloudWatch for this project. This experience taught me a lot about building useful features and working well in a team.",
             "techStack": ["Java", "TypeScript", "AWS Lambda", "DynamoDB", "CloudWatch"]
         }
     ],

@@ -9,7 +9,7 @@ const Intro = () => {
     const textToType1 = myData.intro[0];
     const textToType2 = myData.intro[1];
     const typingSpeed1 = 50;
-    const typingSpeed2 = 30;
+    const typingSpeed2 = 50;
 
     useEffect(() => {
         let index1 = 0;
