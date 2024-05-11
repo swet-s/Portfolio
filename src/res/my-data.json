@@ -72,6 +72,14 @@
     ],
     "workExp": [
         {
+            "company": "Swiggy",
+            "position": "Associate Software Development Engineer",
+            "duration": "Jan 2024 - Present",
+            "location": "Bangalore, India, Remote",
+            "description": "Worked on multiple projects with Swiggy’s Foundation team. Collaborated in the development of a new feature that helps roll out widgets and layouts in phases before deploying them to production. Utilized Go, React, and Java for project development.",
+            "techStack": ["Go", "React", "Java"]
+        },
+        {
             "company": "Amazon",
             "position": "Software Development Engineer Intern",
             "duration": "Jan 2023 - Mar 2023",
