@@ -47,6 +47,17 @@ const Header = ({ text }) => {
                         >
                             info/
                         </Link>
+                    </li> 
+                    <hr className="content-separator" />
+                    <li className="nav-item">
+                        <a
+                            href="https://latexonline.cc/compile?url=https://latext.onrender.com/resume"
+                            className={location.pathname === "/resume" ? "selected" : ""}
+                            target="_blank" // Opens the link in a new tab
+                            rel="noopener noreferrer" // For security reasons
+                        >
+                            resume/
+                        </a>
                     </li>
                 </ul>
             </nav>
