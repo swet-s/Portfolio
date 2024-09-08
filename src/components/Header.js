@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNavicon } from "@fortawesome/free-solid-svg-icons";
+import myData from "../res/my-data.json";
 
 const Header = ({ text }) => {
     const location = useLocation(); // Get the current location
@@ -51,7 +52,7 @@ const Header = ({ text }) => {
                     <hr className="content-separator" />
                     <li className="nav-item">
                         <a
-                            href="https://latexonline.cc/compile?url=https://latext.onrender.com/resume"
+                            href={myData.resume.pdf}
                             className={location.pathname === "/resume" ? "selected" : ""}
                             target="_blank" // Opens the link in a new tab
                             rel="noopener noreferrer" // For security reasons

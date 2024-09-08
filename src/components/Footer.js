@@ -11,7 +11,7 @@ import {
     faClosedCaptioning,
     faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
-import { faChartSimple, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faChartSimple, faFileDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = ({ text }) => {
     const contacts = myData.contacts;
@@ -42,15 +42,21 @@ const Footer = ({ text }) => {
                 </div>
             </div>
             <div className="contact-info">
+                <div className="resume">
+                    <FontAwesomeIcon icon={faFileDownload} /> :{" "}
+                    <a href={`${myData.resume.download}`} className="link-color">
+                        Resume
+                    </a>
+                </div>
                 <div className="email">
                     <FontAwesomeIcon icon={faEnvelope} /> :{" "}
-                    <a href={`mailto:${contacts.email.data}`}>
+                    <a href={`mailto:${contacts.email.data}`} className="link-color">
                         {contacts.email.data}
                     </a>
                 </div>
                 <div className="phone">
                     <FontAwesomeIcon icon={faPhone} /> :{" "}
-                    <a href={`tel:${contacts.phone.data}`}>
+                    <a href={`tel:${contacts.phone.data}`} className="link-color">
                         {contacts.phone.data}
                     </a>
                 </div>

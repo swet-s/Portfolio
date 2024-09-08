@@ -34,6 +34,14 @@
     font-weight: 100;
 }
 
+.email {
+    margin-left: 10px;
+}
+
 .phone {
     margin-left: 10px;
+}
+
+.link-color {
+    color: #32a7fb
 }

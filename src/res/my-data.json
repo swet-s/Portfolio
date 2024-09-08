@@ -26,6 +26,12 @@
             "data": "https://twitter.com/ShreetSwet"
         }
     },
+    "resume" : {
+        "drive": "https://bit.ly/3sz81yO",
+        "pdf": "https://latext.onrender.com/resumepdf",
+        "download": "https://latext.onrender.com/resumepdf?download=true&filename=CV_SwetShreet",
+        "latex": "https://latext.onrender.com/resume"
+    },
     "infoList": [
         { "name": "Name", "data": "Swet Shreet" },
         { "name": "Phone No", "data": "+91-7992307048" },
