@@ -28,6 +28,13 @@
     font-size: 14px;
 }
 
+.resume-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .copyright {
     margin-top: 50px;
     font-size: 12px;
@@ -40,6 +47,11 @@
 
 .phone {
     margin-left: 10px;
+}
+
+.resume {
+    font-size: 14px;
+    margin-right: 10px;
 }
 
 .link-color {

@@ -7,9 +7,10 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
     /* Gradient background color */
-    background: linear-gradient(to right, #dacaca, #859fb9);
+    /* background: linear-gradient(to right, #dacaca, #859fb9); */
+    background-color: #333;
 
-    background-image: url("./res/bg.jpg");
+    /* background-image: url("./res/bg.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

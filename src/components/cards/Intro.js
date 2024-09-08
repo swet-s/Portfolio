@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import myData from "../../res/my-data.json";
 import classes from "./Intro.module.css";
 import Model from "../../three_components/Model";
+import { useQuery } from "react-query";
+import { fetchJsonData } from "../../api/fetch";
 
 const Intro = () => {
     const [text1, setText1] = useState("");
     const [text2, setText2] = useState("");
+    const { myData, error, isLoading } = useQuery('fileData', fetchJsonData);
+
     const textToType1 = myData.intro[0];
     const textToType2 = myData.intro[1];
     const typingSpeed1 = 50;
@@ -34,6 +37,9 @@ const Intro = () => {
             clearInterval(typingInterval2);
         };
     }, []);
+
+    if (isLoading) return 'Loading...';
+    if (error) return `Error: ${error.message}`;
 
     return (
         <div className={classes.section}>

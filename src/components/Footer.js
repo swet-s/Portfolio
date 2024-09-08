@@ -6,15 +6,21 @@ import {
     faLinkedin,
     faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import myData from "../res/my-data.json";
 import {
     faClosedCaptioning,
     faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
-import { faChartSimple, faFileDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faChartSimple, faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useQuery } from "react-query";
+import { fetchJsonData } from "../api/fetch";
 
 const Footer = ({ text }) => {
-    const contacts = myData.contacts;
+    const { data, error, isLoading } = useQuery('fileData', fetchJsonData);
+
+    if (isLoading) return 'Loading...';
+    if (error) return `Error: ${error.message}`;
+
+    const contacts = data.contacts;
 
     return (
         <footer className="footer">
@@ -42,12 +48,6 @@ const Footer = ({ text }) => {
                 </div>
             </div>
             <div className="contact-info">
-                <div className="resume">
-                    <FontAwesomeIcon icon={faFileDownload} /> :{" "}
-                    <a href={`${myData.resume.download}`} className="link-color">
-                        Resume
-                    </a>
-                </div>
                 <div className="email">
                     <FontAwesomeIcon icon={faEnvelope} /> :{" "}
                     <a href={`mailto:${contacts.email.data}`} className="link-color">
@@ -60,6 +60,12 @@ const Footer = ({ text }) => {
                         {contacts.phone.data}
                     </a>
                 </div>
+            </div>
+            <div className="resume-section">
+                <div className="resume">CV :</div>
+                <a href={`${data.resume.download}`} className="link-color">
+                    <FontAwesomeIcon icon={faDownload} />
+                </a>
             </div>
 
             <div className="copyright">

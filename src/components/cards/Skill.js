@@ -1,9 +1,15 @@
 import React from "react";
-import myData from "../../res/my-data.json";
 import ItemBox from "../boxes/ItemBox";
 import "../Card.css";
+import { useQuery } from "react-query";
+import { fetchJsonData } from "../../api/fetch";
 
 const Skill = () => {
+    const { myData, error, isLoading } = useQuery('fileData', fetchJsonData);
+
+    if (isLoading) return 'Loading...';
+    if (error) return `Error: ${error.message}`;
+
     const skills = myData.skills;
 
     const handleCopy = (skill) => {

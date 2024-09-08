@@ -1,11 +1,17 @@
 import React from "react";
-import myData from "../../res/my-data.json";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Card.css";
 import ItemBox from "../boxes/ItemBox";
+import { useQuery } from "react-query";
+import { fetchJsonData } from "../../api/fetch";
 
 const WorkExperience = () => {
+    const { myData, error, isLoading } = useQuery('fileData', fetchJsonData);
+
+    if (isLoading) return 'Loading...';
+    if (error) return `Error: ${error.message}`;
+
     const workExp = myData.workExp;
 
     const handleCopy = (work) => {
