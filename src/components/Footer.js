@@ -11,17 +11,8 @@ import {
     faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
 import { faChartSimple, faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { useQuery } from "react-query";
-import { fetchJsonData } from "../api/fetch";
 
-const Footer = ({ text }) => {
-    const { data, error, isLoading } = useQuery('fileData', fetchJsonData);
-
-    if (isLoading) return 'Loading...';
-    if (error) return `Error: ${error.message}`;
-
-    const contacts = data.contacts;
-
+const Footer = ({ text, contacts, resume }) => {
     return (
         <footer className="footer">
             <div className="social-links">
@@ -63,7 +54,7 @@ const Footer = ({ text }) => {
             </div>
             <div className="resume-section">
                 <div className="resume">CV :</div>
-                <a href={`${data.resume.download}`} className="link-color">
+                <a href={`${resume.download}`} className="link-color">
                     <FontAwesomeIcon icon={faDownload} />
                 </a>
             </div>

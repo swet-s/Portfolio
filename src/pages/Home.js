@@ -4,15 +4,15 @@ import Skill from "../components/cards/Skill";
 import About from "../components/cards/About";
 import Intro from "../components/cards/Intro";
 
-const Home = () => {
+const Home = ({intro, about, skills, education}) => {
     return (
         <div className="container">
-            <Intro />
-            <About />
+            <Intro intro={intro}/>
+            <About about={about}/>
             <div style={{ height: "15px" }}></div>
-            <Skill />
+            <Skill skills={skills}/>
             <div style={{ height: "15px" }}></div>
-            <Education />
+            <Education education={education}/>
         </div>
     );
 };

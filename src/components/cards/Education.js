@@ -2,17 +2,8 @@ import React from "react";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Card.css";
-import { useQuery } from "react-query";
-import { fetchJsonData } from "../../api/fetch";
 
-const Education = () => {
-    const { myData, error, isLoading } = useQuery('fileData', fetchJsonData);
-
-    if (isLoading) return 'Loading...';
-    if (error) return `Error: ${error.message}`;
-
-    const education = myData.education;
-
+const Education = ({education}) => {
     const handleCopy = (education) => {
         let text = `Institute: ${education.institution}\nDuration: ${education.duration}\nDegree: ${education.degree}\nCGPA: ${education.cgpa}`;
 

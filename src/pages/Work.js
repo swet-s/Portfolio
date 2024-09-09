@@ -2,12 +2,12 @@ import React from "react";
 import Project from "../components/cards/Project";
 import WorkExperience from "../components/cards/WorkExperience";
 
-const Work = () => {
+const Work = ({projects, workExp}) => {
     return (
         <div className="container">
-            <Project />
+            <Project projects={projects}/>
             <div style={{ height: "15px" }}></div>
-            <WorkExperience />
+            <WorkExperience workExp={workExp}/>
         </div>
     );
 };

@@ -5,17 +5,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "../Card.css";
 import ItemBox from "../boxes/ItemBox";
-import { useQuery } from "react-query";
-import { fetchJsonData } from "../../api/fetch";
 
-const Project = () => {
-    const { myData, error, isLoading } = useQuery('fileData', fetchJsonData);
-
-    if (isLoading) return 'Loading...';
-    if (error) return `Error: ${error.message}`;
-
-    const projects = myData.projects;
-
+const Project = ({projects}) => {
     const handleCopy = (project) => {
         let text = `Project Name: ${project.name}\nDescription: ${project.description}\nDuration: ${
             project.duration

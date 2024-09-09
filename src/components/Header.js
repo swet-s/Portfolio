@@ -3,17 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNavicon } from "@fortawesome/free-solid-svg-icons";
-import { useQuery } from "react-query";
-import { fetchJsonData } from "../api/fetch";
 
-const Header = ({ text }) => {
-    const { myData, error, isLoading } = useQuery('fileData', fetchJsonData);
+const Header = ({ text, resume }) => {
     const location = useLocation(); // Get the current location
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-    if (isLoading) return 'Loading...';
-    if (error) return `Error: ${error.message}`;
-
    
     const toggleNavBar = () => {
         setIsSidebarOpen((prevState) => !prevState);
@@ -58,7 +51,7 @@ const Header = ({ text }) => {
                     <hr className="content-separator" />
                     <li className="nav-item">
                         <a
-                            href={myData.resume.pdf}
+                            href={resume.pdf}
                             className={location.pathname === "/resume" ? "selected" : ""}
                             target="_blank" // Opens the link in a new tab
                             rel="noopener noreferrer" // For security reasons

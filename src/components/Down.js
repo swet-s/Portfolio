@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Down.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowDownAZ } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Down = () => {
