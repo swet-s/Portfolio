@@ -3,11 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNavicon } from "@fortawesome/free-solid-svg-icons";
+import { handlePdf } from "../utils/fetch";
 
-const Header = ({ text, resume }) => {
+const Header = ({ text }) => {
     const location = useLocation(); // Get the current location
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-   
+
     const toggleNavBar = () => {
         setIsSidebarOpen((prevState) => !prevState);
     };
@@ -24,10 +25,10 @@ const Header = ({ text, resume }) => {
                     ></FontAwesomeIcon>
                 </div>
                 <ul className={`nav-list ${isSidebarOpen ? "active" : ""}`}>
-                    <hr className="content-separator" />
+                    <li className="nav-item"></li>
                     <li className="nav-item">
                         <Link to="/" className={location.pathname === "/" ? "selected" : ""}>
-                            home/
+                            /home
                         </Link>
                     </li>
                     <hr className="content-separator" />
@@ -36,7 +37,7 @@ const Header = ({ text, resume }) => {
                             to="/work"
                             className={location.pathname === "/work" ? "selected" : ""}
                         >
-                            work/
+                            /work
                         </Link>
                     </li>
                     <hr className="content-separator" />
@@ -45,19 +46,21 @@ const Header = ({ text, resume }) => {
                             to="/info"
                             className={location.pathname === "/info" ? "selected" : ""}
                         >
-                            info/
+                            /info
                         </Link>
-                    </li> 
+                    </li>
                     <hr className="content-separator" />
                     <li className="nav-item">
-                        <a
-                            href={resume.pdf}
+                        <Link
+                            to="#"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                handlePdf();
+                            }}
                             className={location.pathname === "/resume" ? "selected" : ""}
-                            target="_blank" // Opens the link in a new tab
-                            rel="noopener noreferrer" // For security reasons
                         >
-                            resume/
-                        </a>
+                            /resume
+                        </Link>
                     </li>
                 </ul>
             </nav>

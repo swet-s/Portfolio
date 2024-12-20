@@ -1,18 +1,12 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faGithub,
-    faLinkedin,
-    faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-    faClosedCaptioning,
-    faEnvelope,
-} from "@fortawesome/free-regular-svg-icons";
+import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faClosedCaptioning, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faChartSimple, faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { handlePdf } from "../utils/fetch";
 
-const Footer = ({ text, contacts, resume }) => {
+const Footer = ({ text, contacts }) => {
     return (
         <footer className="footer">
             <div className="social-links">
@@ -25,10 +19,7 @@ const Footer = ({ text, contacts, resume }) => {
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a href={contacts.codeforces.data}>
-                        <FontAwesomeIcon
-                            icon={faChartSimple}
-                            style={{ transform: "scaleX(-1)" }}
-                        />
+                        <FontAwesomeIcon icon={faChartSimple} style={{ transform: "scaleX(-1)" }} />
                     </a>
                     <a href={contacts.codechef.data}>
                         <FontAwesomeIcon icon={faClosedCaptioning} />
@@ -54,14 +45,16 @@ const Footer = ({ text, contacts, resume }) => {
             </div>
             <div className="resume-section">
                 <div className="resume">CV :</div>
-                <a href={`${resume.download}`} className="link-color">
+                <button
+                    onClick={() => handlePdf(true, "CV_SwetShreet.pdf")}
+                    className="link-color"
+                    style={{ cursor: "pointer", background: "none", border: "none", padding: 0 }}
+                >
                     <FontAwesomeIcon icon={faDownload} />
-                </a>
+                </button>
             </div>
 
-            <div className="copyright">
-                &copy; 2023 {text}. All rights reserved.
-            </div>
+            <div className="copyright">&copy; 2023 {text}. All rights reserved.</div>
         </footer>
     );
 };
